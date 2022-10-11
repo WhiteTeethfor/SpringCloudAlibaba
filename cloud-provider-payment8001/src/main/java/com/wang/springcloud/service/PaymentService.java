@@ -2,6 +2,7 @@ package com.wang.springcloud.service;
 
 import com.wang.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * @author Wang
@@ -11,5 +12,5 @@ import org.apache.ibatis.annotations.Param;
 public interface PaymentService {
     int create(Payment payment);
 
-    Payment getPaymentGetById(@Param("id") Long id);
+    Payment getPaymentGetById(@Param("id")  Long id);
 }
